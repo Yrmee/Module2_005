@@ -1,0 +1,85 @@
+@import './_constants';
+
+header {
+    display: flex;
+    justify-content: space-around;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    padding: $padding;
+    background-color: #c0eea9;
+    height: 120px;
+    -webkit-box-shadow: 0px 10px 7px -9px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 10px 7px -9px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 10px 7px -9px rgba(0, 0, 0, 0.75);
+    .header__brand-logo img {
+        width: auto;
+        padding-top: 20px;
+        height: 7.5em;
+      }
+  }
+
+  .hero {
+    @include __text();
+    padding: $padding;
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    background: $background;
+    .hero__img img {
+        display: block;
+        height: auto;
+        width: 15.5em;
+      }
+  }
+
+  .featured {
+    @include __text();
+    padding: $padding;
+
+    .featured__wrapper {
+        display: flex;
+        flex-wrap: wrap;
+      }
+      
+      .featured_img img {
+        width: 300px;
+      }
+      .featured__text p {
+        text-align: justify;
+        padding: $padding;
+        line-height: 1.4em;
+      }
+  }
+
+  .about {
+    @include __text();
+    background-color: $background;
+    padding: $padding;
+
+      .about__text p {
+        text-align: justify;
+        padding-bottom: 1em;
+        line-height: 1.4em;
+      }
+      .about__wrapper {
+        display: flex;
+      }
+      
+      .about__video-wrapper {
+        position: relative;
+        padding-bottom: 33.25%;
+        overflow: hidden;
+        align-self: center;
+        flex: 2 0 55%;
+        margin: 1.4em 0;
+      }
+      
+      .about__video-wrapper iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
+  }

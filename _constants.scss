@@ -1,0 +1,8 @@
+@mixin __text {
+    max-width: 700px;
+    text-align: center;
+    padding: $padding;
+  }
+  
+  $padding: 20px;
+  $background: #97d279;
